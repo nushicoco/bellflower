@@ -19,12 +19,12 @@ class NavigationBar extends Component
                         <Navbar.Brand>
                             <a href="#">bellflower</a>
                         </Navbar.Brand>
-                        {/*<Navbar.Toggle />*/}
+                        <Navbar.Toggle />
                     </Navbar.Header>
-                    {/*<Navbar.Collapse>*/}
-                        {/*<Nav>*/}
-                            {/*<NavItem eventKey={1}> <Link to="/search">Search</Link></NavItem>*/}
-                            {/*<NavItem eventKey={2}> About </NavItem>*/}
+                    <Navbar.Collapse>
+                        <Nav>
+                            <NavItem eventKey={1}> <Link to="/search">Search</Link></NavItem>
+                            <NavItem eventKey={2}> <Link to="/results">Results</Link> </NavItem>
                             {/*<NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">*/}
                                 {/*<MenuItem eventKey={3.1}>Action</MenuItem>*/}
                                 {/*<MenuItem eventKey={3.2}>Another action</MenuItem>*/}
@@ -36,8 +36,8 @@ class NavigationBar extends Component
                         {/*<Nav pullRight>*/}
                             {/*<NavItem eventKey={1} href="#">Link Right</NavItem>*/}
                             {/*<NavItem eventKey={2} href="#">Link Right</NavItem>*/}
-                        {/*</Nav>*/}
-                    {/*</Navbar.Collapse>*/}
+                        </Nav>
+                    </Navbar.Collapse>
                 </Navbar>
             </div>
         );
