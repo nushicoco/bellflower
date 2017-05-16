@@ -5,16 +5,16 @@ import Fabrics from "./components/fabrics";
 export const routes = [
 
     {
-        'path':'/bellflower',
+        'path':'/',
         'component': Search,
         'exact' : true
     },
     {
-        'path':'/bellflower/search',
+        'path':'/search',
         'component': Search,
     },
     {
-        'path':'/bellflower/results',
+        'path':'/results',
         'component': Fabrics,
     },
 

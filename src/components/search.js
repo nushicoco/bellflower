@@ -28,7 +28,7 @@ class Search extends Component {
     }
 
     updateSearch () {
-        let searchParams = "utf8=%E2%9C%93&q=dogs&lang=en&availability=for_sale&substrate=all&sort=classic&view=design&offset=0&limit=10&color_family1=red&color_family2=&commit=Search";
+        let searchParams = `utf8=%E2%9C%93&q=${this.state.searchTermInputValue}&lang=en&availability=for_sale&substrate=all&sort=classic&view=design&offset=0&limit=10&color_family1=${this.state.color}&color_family2=&commit=Search`;
 
         this.state.updateSearch(searchParams);
     }
@@ -36,18 +36,19 @@ class Search extends Component {
     colorClicked(color)
     {
         this.setState({color:color});
-        console.log("ColorClicked:",color);
+        this.updateSearch();
     }
 
     getValidationState() {
         const length = this.state.searchTermInputValue.length;
-        if (length > 3) return 'success';
+        if (length > 2) return 'success';
         else if (length > 1) return 'warning';
         else if (length > 0) return 'error';
     }
 
     handleChange(e) {
         this.setState({ searchTermInputValue: e.target.value });
+        this.updateSearch();
     }
 
     render () {
@@ -69,13 +70,12 @@ class Search extends Component {
                             onChange={this.handleChange}
                         />
                         <FormControl.Feedback />
-                        {/*<HelpBlock>Validation is based on string length.</HelpBlock>*/}
                         <ControlLabel>In color </ControlLabel>
                         <div>
                             <ButtonToolbar>
                                 <ButtonGroup>
                                     {this.colors.map((color) => {
-                                        return <Button key={color} className={"btn-" + color} onClick={() => this.colorClicked(color)}>{color}</Button>
+                                        return <Button key={color} className={`btn-${color}`} onClick={() => this.colorClicked(color)}>{color}</Button>
                                     })}
                                 </ButtonGroup>
                             </ButtonToolbar>
