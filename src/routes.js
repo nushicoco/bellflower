@@ -10,11 +10,11 @@ export const routes = [
         'exact' : true
     },
     {
-        'path':'/search',
+        'path':'/bellflower/search',
         'component': Search,
     },
     {
-        'path':'/results',
+        'path':'/bellflower/results',
         'component': Fabrics,
     },
 
