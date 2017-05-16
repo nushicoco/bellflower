@@ -1,0 +1,135 @@
+h1 {
+    margin-left: 25px;
+}
+
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    .interested-profile-image {
+        background-size: cover;
+        height: 350px;
+        width: 350px;
+        margin: 0 auto;
+        /*border: #caf01f 3px solid;*/
+    }
+
+    .interested-actions {
+        /*float: right;*/
+        margin: 15px;
+        text-align: -webkit-right;
+    }
+
+    .interested-actions .love{
+        color: #f01f61;
+    }
+    .interested-actions .small-heart{
+        font-size: 0.8em;
+    }
+    .interested-actions .skip{
+        color: #1ff06c;
+    }
+    .navbar-inverse{
+        background-color: #f01f61;
+        border-color: #f01f61;
+        color:white;
+    }
+    .navbar-brand{
+        background-color: #f01f61;
+        border-color: #f01f61;
+        color:white;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: transparent;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+        color: white;
+    }
+
+    .btn {
+        color: white;
+        width: 75px;
+
+    }
+    .btn-blue {
+        background-color: #1fa3f0;
+    }
+    .btn-yellow {
+        background-color: #f0d11f;
+    }
+    .btn-red {
+        background-color: red;
+    }
+    .btn-green {
+        background-color: green;
+    }
+    .btn-black{
+        background-color: #222222;
+    }
+    .btn-white{
+        background-color: white;
+        color:black;
+    }
+
+    .slick-dots{
+        position: absolute;
+        bottom: 0 !important;
+    }
+
+    .slick-dots li button:before {
+        font-size: 15px !important;
+        color: white !important;
+    }
+
+    .carousel-inner img {
+        margin: 15px auto;
+    }
+
+    .carousel-inner {
+        margin: 15px auto;
+        margin-left: 20px;
+    }
+
+    .carousel-item{
+        text-align: center;
+
+    }
+
+    .carousel-control{
+        background-image: none !important;
+    }
+
+    .screen-name{
+        color: #f01f61;
+        font-style: italic;
+    }
+
+    .user-name{
+        color: #1fa3f0;
+        font-style: italic;
+    }
+
+    .search-form {
+        margin: 30px;
+    }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
