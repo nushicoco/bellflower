@@ -5,7 +5,7 @@ import Fabrics from "./components/fabrics";
 export const routes = [
 
     {
-        'path':'/',
+        'path':'/bellflower',
         'component': Search,
         'exact' : true
     },
