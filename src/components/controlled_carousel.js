@@ -2,7 +2,7 @@
  * Created by einavcarmon on 17/04/2017.
  */
 import React, {Component} from 'react';
-import  {Carousel, CarouselItem} from 'react-bootstrap';
+import  {Carousel, CarouselItem, Button } from 'react-bootstrap';
 
 export default class ControlledCarousel extends Component {
 
@@ -27,7 +27,10 @@ export default class ControlledCarousel extends Component {
     render() {
         return (
             <div>
-            <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect}>
+            <Carousel activeIndex={this.state.index}
+                      direction={this.state.direction}
+                      onSelect={this.handleSelect}
+                      indicators={false}>
 
                 {this.state.items.map((item) => {
                     return (
@@ -39,7 +42,7 @@ export default class ControlledCarousel extends Component {
                                 <h3 className="truncate">{item.name}</h3>
                                 <p>
                                 {item.tags.map((tag) => {
-                                    return <span key={tag}>+{tag} ,</span>
+                                    return <Button bsStyle="default" key={tag} className="product-tag">{tag}</Button>
                                 })}
                                 </p>
                             </div>

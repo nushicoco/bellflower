@@ -25,7 +25,6 @@ class Fabrics extends Component{
     }
 
     render () {
-        console.log("Interested:render");
         if (this.props.search && this.props.search.results){
             let items = this.props.search.results;
 
