@@ -12,8 +12,6 @@ class NavigationBar extends Component
     }
 
     render () {
-        console.log ("render");
-
         return (
             <div>
                 <Navbar inverse collapseOnSelect>

@@ -16,7 +16,6 @@ import App from './App';
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 const history = createBrowserHistory();
 
-console.log(routes);
 ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
         <Router history={history}>
