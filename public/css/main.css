@@ -116,11 +116,13 @@ h1 {
     .screen-name{
         color: #f01f61;
         font-style: italic;
+        font-size: x-small;
     }
 
     .user-name{
         color: #1fa3f0;
         font-style: italic;
+        font-size: larger;
     }
 
     .search-form {
@@ -130,6 +132,14 @@ h1 {
     .product-tag {
         background-color: lightgrey;
         margin: 5px
+    }
+
+    a {
+        margin-left: 15px;
+    }
+
+    p {
+        width:90%
     }
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }

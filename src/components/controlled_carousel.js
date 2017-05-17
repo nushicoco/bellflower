@@ -4,6 +4,7 @@
 import React, {Component} from 'react';
 import  {Carousel, CarouselItem, Button } from 'react-bootstrap';
 
+
 export default class ControlledCarousel extends Component {
 
     constructor(props) {
@@ -24,6 +25,7 @@ export default class ControlledCarousel extends Component {
         });
     }
 
+
     render() {
         return (
             <div>
@@ -35,11 +37,11 @@ export default class ControlledCarousel extends Component {
                 {this.state.items.map((item) => {
                     return (
                         <CarouselItem key={item.id}>
-                            <p className="screen-name">{item.user.screen_name} <span className="user-name">{item.user.first_name} {item.user.last_name} </span></p>
-
+                            <h3 className="truncate">{item.name}</h3>
+                            <p>by <span className="user-name">{item.user.first_name} {item.user.last_name} </span> <span className="screen-name">({item.user.screen_name})</span></p>
                             <img width={173} height={173} src={item.thumbnail_url}/>
                             <div className="carousel-item">
-                                <h3 className="truncate">{item.name}</h3>
+
                                 <p>
                                 {item.tags.map((tag) => {
                                     return <Button bsStyle="default" key={tag} className="product-tag">{tag}</Button>
